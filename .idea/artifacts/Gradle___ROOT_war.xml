@@ -1,0 +1,32 @@
+<component name="ArtifactManager">
+  <artifact type="war" name="Gradle : ROOT.war">
+    <output-path>$PROJECT_DIR$/classes/artifacts/gradledemo</output-path>
+    <properties id="gradle-properties">
+      <options external-project-path="$PROJECT_DIR$" />
+    </properties>
+    <root id="archive" name="ROOT.war">
+      <element id="javaee-facet-resources" facet="gradledemo_main/web/Web Gradle : ROOT.war" />
+      <element id="directory" name="WEB-INF">
+        <element id="directory" name="classes">
+          <element id="module-output" name="gradledemo_main" />
+          <element id="dir-copy" path="$PROJECT_DIR$/build/resources/main" />
+        </element>
+        <element id="directory" name="lib">
+          <element id="library" level="project" name="Gradle: org.springframework:spring-webmvc:3.2.2.RELEASE" />
+          <element id="library" level="project" name="Gradle: org.springframework:spring-beans:3.2.2.RELEASE" />
+          <element id="library" level="project" name="Gradle: org.springframework:spring-context:3.2.2.RELEASE" />
+          <element id="library" level="project" name="Gradle: javax.servlet:jstl:1.1.2" />
+          <element id="library" level="project" name="Gradle: org.springframework:spring-core:3.2.2.RELEASE" />
+          <element id="library" level="project" name="Gradle: org.springframework:spring-expression:3.2.2.RELEASE" />
+          <element id="library" level="project" name="Gradle: org.springframework:spring-web:3.2.2.RELEASE" />
+          <element id="library" level="project" name="Gradle: org.springframework:spring-aop:3.2.2.RELEASE" />
+          <element id="library" level="project" name="Gradle: commons-logging:commons-logging:1.1.1" />
+          <element id="library" level="project" name="Gradle: aopalliance:aopalliance:1.0" />
+        </element>
+      </element>
+      <element id="directory" name="META-INF">
+        <element id="file-copy" path="$PROJECT_DIR$/classes/artifacts/gradledemo/exploded/ROOT.war/META-INF/MANIFEST.MF" />
+      </element>
+    </root>
+  </artifact>
+</component>

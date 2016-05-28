@@ -1,6 +1,9 @@
 apply plugin: 'war'
 apply plugin: 'jetty'
+apply plugin: 'idea'
 apply plugin: 'eclipse-wtp'
+
+
 
 repositories {
    mavenCentral()
@@ -9,7 +12,18 @@ repositories {
 dependencies {
    providedCompile 'javax.servlet:servlet-api:2.5'
    compile 'org.springframework:spring-webmvc:3.2.2.RELEASE'
-   runtime 'javax.servlet:jstl:1.1.2'
+
+    compile 'org.springframework:spring-jdbc:' + springJDBCVersion,
+            'org.springframework:spring-tx:4.0.7.RELEASE',
+            'log4j:log4j:' + log4jVersion,
+            'javax.mail:mail:' + javaxMailVersion,
+            'javax.jms:javax.jms-api:' + javaxJmsVersion,
+            'org.slf4j:slf4j-log4j12:' + slf4jVersion,
+            'mysql:mysql-connector-java:' + mysqlJavaConnectorVersion,
+            'org.codehaus.jackson:jackson-mapper-asl:' + jacksonVersion,
+            'jstl:jstl:1.2'
+    /*runtime 'javax.servlet:jstl:1.1.2'*/
+    //include in compile only, exclude in the wa
 }
 
 war{
@@ -18,4 +32,4 @@ war{
 }
 
 /* Change context path (base url). otherwise defaults to name of project */
-jettyRunWar.contextPath = '' 
+jettyRunWar.contextPath = ''
