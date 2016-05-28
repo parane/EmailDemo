@@ -12,7 +12,7 @@ import java.util.Properties;
 
 public class EmailSendLogic extends StatelessServiceLogic<Boolean, EmailParam> {
     final String senderEmail = "cseanalyser@gmail.com";
-    final String senderPassword = "*******";
+    final String senderPassword = "java@123";
     final String emailSMTPserver = "smtp.gmail.com";
     final String emailServerPort = "587";
     String receiverEmail = null;

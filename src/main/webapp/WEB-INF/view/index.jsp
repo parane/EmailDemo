@@ -68,7 +68,7 @@
                 <!-- Header btn area -->
                 <div class="header-btn-area">
                     <!-- <a class="knowmore-btn" href="#">KNOW MORE</a> -->
-                    <a class="download-btn" href="#contact<%--javascript:doSearch();--%>">DOWNLOAD Theme</a>
+                    <a class="download-btn" href="#contact<%--javascript:doSearch();--%>">CONTACT Us</a>
                 </div>
             </div>
         </div>
@@ -122,12 +122,12 @@
                 <div class="contact-left wow fadeInLeft">
                     <h2>Contact with us</h2>
                     <address class="single-address">
-                        <h4>Postal address:</h4>
-                        <p>PO Box 16122 Collins Street West Victoria 8007 Australia</p>
+                        <h4>Development Center:</h4>
+                        <p>PO Box 16122 Melbourne Avenue, Colombo, Sri Lanka</p>
                     </address>
                     <address class="single-address">
                         <h4>Headquarters:</h4>
-                        <p>121 King Street, Melbourne Victoria 3000 Australia</p>
+                        <p>121 King Street, Toranto Victoria 3000 Canada</p>
                     </address>
                     <address class="single-address">
                         <h4>Phone</h4>
@@ -136,8 +136,8 @@
                     </address>
                     <address class="single-address">
                         <h4>E-Mail</h4>
-                        <p>Support: Support@example.com</p>
-                        <p>Sales: sales@example.com</p>
+                        <p>Support: atutscom@gmail.com</p>
+                        <p>Sales: atutscom@gmail.com</p>
                     </address>
                 </div>
             </div>
