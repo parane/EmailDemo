@@ -11,8 +11,8 @@ import java.io.UnsupportedEncodingException;
 import java.util.Properties;
 
 public class EmailSendLogic extends StatelessServiceLogic<Boolean, EmailParam> {
-    final String senderEmail = "cseanalyser@gmail.com";
-    final String senderPassword = "java@123";
+    final String senderEmail = "yourMAil@gmail.com";
+    final String senderPassword = "urpassword";
     final String emailSMTPserver = "smtp.gmail.com";
     final String emailServerPort = "587";
     String receiverEmail = null;
@@ -21,7 +21,7 @@ public class EmailSendLogic extends StatelessServiceLogic<Boolean, EmailParam> {
 
     @Override
     public Boolean invoke(EmailParam emailParam) {
-        this.receiverEmail = "atutscom@gmail.com";
+        this.receiverEmail = "yourMAil@gmail.com";
         this.emailSubject = emailParam.getSubject();
         this.emailBody = "From:"+emailParam.getSenderAddress()+"\nmessage:\n"+emailParam.getContent();
 
