@@ -15,3 +15,7 @@ build
 .project
 
 .idea/
+
+*.iws
+*.ipr
+*.iml
