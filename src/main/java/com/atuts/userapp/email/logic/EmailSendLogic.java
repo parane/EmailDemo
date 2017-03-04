@@ -15,15 +15,12 @@ public class EmailSendLogic extends StatelessServiceLogic<Boolean, EmailParam> {
     final String senderPassword = "urpassword";
     final String emailSMTPserver = "smtp.gmail.com";
     final String emailServerPort = "587";
-    String receiverEmail = null;
-    String emailSubject = null;
-    String emailBody = null;
 
     @Override
     public Boolean invoke(EmailParam emailParam) {
-        this.receiverEmail = "yourMAil@gmail.com";
-        this.emailSubject = emailParam.getSubject();
-        this.emailBody = "From:"+emailParam.getSenderAddress()+"\nmessage:\n"+emailParam.getContent();
+        String receiverEmail = "yourMAil@gmail.com";
+        String emailSubject = emailParam.getSubject();
+        String emailBody = "From:"+emailParam.getSenderAddress()+"\nmessage:\n"+emailParam.getContent();
 
         Properties props = new Properties();
         props.put("mail.smtp.user", senderEmail);

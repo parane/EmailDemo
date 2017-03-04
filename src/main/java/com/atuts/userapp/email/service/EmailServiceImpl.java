@@ -8,7 +8,7 @@ import com.atuts.userapp.email.logic.EmailSendLogic;
 
 public class EmailServiceImpl implements EmailService {
 
-    private EmailSendLogic  emailSendLogic;
+    private EmailSendLogic emailSendLogic;
 
     @Override
     public ServiceResponse<Boolean> sendEmail(ServiceRequest<EmailParam> emailParam) {
